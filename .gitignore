@@ -28,3 +28,7 @@ d3fl_simulator-*.tar
 __pycache__
 
 *.pyc
+
+*batch*
+
+*tar.gz
