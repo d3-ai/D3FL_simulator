@@ -64,7 +64,7 @@ def main():
         args = parser.parse_args()
 
     else:
-        args = argparse.Namespace(rounds=3, min_num_clients=2, sample_fraction=1.0, server_address = "0.0.0.0:8080")
+        args = argparse.Namespace(rounds=3, min_num_clients=2, sample_fraction=1.0, server_address="0.0.0.0:8080")
 
     print(args)
 
