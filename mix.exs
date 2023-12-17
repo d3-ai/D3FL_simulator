@@ -16,7 +16,7 @@ defmodule D3flSimulator.MixProject do
     [
       extra_applications: [:logger],
       mod: {D3flSimulator.Application, []},
-      applications: [:export]
+      applications: [:export, :poolboy]
     ]
   end
 
@@ -24,7 +24,9 @@ defmodule D3flSimulator.MixProject do
   defp deps do
     [
       {:export, "~> 0.1.0"},
-      {:poolboy, "~> 1.5"}
+      {:poolboy, "~> 1.5"},
+      {:grpc, "~> 0.7"},
+      {:protobuf, "~> 0.11"}
     ]
   end
 end
